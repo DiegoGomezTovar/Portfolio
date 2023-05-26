@@ -1,0 +1,335 @@
+body {
+    cursor: url("../Svgs/cursor.svg"), auto;
+    font-family: 'Open Sans';
+}
+
+/*NAVBAR --------------------------------*/
+
+nav {
+    width: auto;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+#menumobile{
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+
+#name {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: -0.03em;
+
+    color: #181818;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+    color: #AAAAAA;
+}
+
+a:hover {
+    color: #1570EF;
+}
+
+/*NAVBAR --------------------------------*/
+
+
+
+
+
+
+
+/*HEADER --------------------------------*/
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 80px 12% 80px 12%;
+
+}
+
+#description {
+    width: 100%;
+    max-width: 841px;
+    height: 40%;
+
+    padding-left: 40px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 110%;
+    /* or 106px */
+
+    letter-spacing: -0.03em;
+
+    color: #181818;
+}
+
+
+
+#corazon {
+    position: static;
+    width: 51px;
+    height: 55px;
+    left: 1059px;
+    top: 204px;
+}
+
+/*HEADER --------------------------------*/
+
+
+
+
+
+/*CARDS --------------------------------*/
+
+#row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 25%;
+    gap: 15%;
+
+}
+
+
+
+#card1,
+#card2 {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+
+}
+
+#imagencard2 {
+    background-image: url(../Images/Spotify.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 551px;
+    height: 399px;
+}
+
+#imagencard {
+    background-image: url(../Images/AutoClaimer.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 457px;
+    height: 600px;
+}
+
+#imagencard:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
+    border-radius: 32px;
+    transform: rotate(-2deg);
+    transition: 300ms;
+}
+
+#imagencard2:hover {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
+    border-radius: 32px;
+    transform: rotate(-2deg);
+    transition: 300ms;
+}
+
+
+#text-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+#title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 110%;
+    color: #181818;
+}
+
+#category {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    padding-top: 8px;
+    color: #AAAAAA;
+}
+
+
+
+/*CARDS --------------------------------*/
+
+
+
+
+/*ABOUT ME --------------------------------*/
+#aboutme {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+
+}
+
+#text-aboutme {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10%;
+    gap: 24px;
+}
+
+#imageaboutme {
+
+    width: 538px;
+    height: 543px;
+}
+
+#title-aboutme {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+    /* or 35px */
+
+    letter-spacing: -0.03em;
+
+    color: #1570EF;
+}
+
+#p-aboutme {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    /* or 53px */
+
+    letter-spacing: -0.03em;
+}
+
+/*ABOUT ME --------------------------------*/
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #menu{
+        display: none;
+        
+    }
+
+    #menumobile{
+        display: block;
+    }
+
+    nav{
+        padding: 32px;
+    }
+
+
+    #description {
+
+        font-size: 60px;
+        padding: 0px;
+
+    }
+
+  
+
+    #row {
+        flex-direction: column;
+
+    }
+
+
+
+    #card1,
+    #card2 {
+        padding: 40px;
+    }
+
+    #imagencard2 {
+        background-position: center;
+        background-size: 100%;
+        width: 312px;
+        height: 227px;
+
+    }
+
+    #imagencard {
+        background-position: center;
+        background-size: 100%;
+        width: 312px;
+        height: 410px;
+    }
+
+
+    #aboutme {
+
+        flex-direction: column;
+
+
+    }
+
+    #imageaboutme {
+
+        width: 400px;
+        height: auto;
+    }
+
+
+    #title-aboutme {
+        font-size: 24px;
+    }
+
+    #p-aboutme {
+        font-size: 32px;
+    }
+
+}
